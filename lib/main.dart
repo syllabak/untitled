@@ -28,7 +28,8 @@ class MyApp extends StatelessWidget {
                           TextStyle(fontWeight: FontWeight.bold, fontSize: 30)),
                 ),
                 Text("Par Mamamya",
-                    style: TextStyle(color: Colors.green[500], fontSize: 16))
+                    style: TextStyle(color: Colors.black54, fontSize: 16)
+                )
               ],
             )),
             Icon(Icons.favorite, color: Colors.green),
@@ -62,15 +63,20 @@ class MyApp extends StatelessWidget {
         // or simply save your changes to "hot reload" in a Flutter IDE).
         // Notice that the counter didn't reset back to zero; the application
         // is not restarted.
-        primarySwatch: Colors.orange,
+        primarySwatch: Colors.brown,
       ),
       home: Scaffold(
           appBar: AppBar(
             // Here we take the value from the MyHomePage object that was created by
             // the App.build method, and use it to set our appbar title.
-            title: Text("Mes recettes"),
+            title: Text("Mes recettes",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.green),
+
+            ),
           ),
-          body: Column(children: [
+          body: ListView(children: [
             Image.asset(
               'images/pizza.png',
               width: 600,
@@ -98,7 +104,8 @@ Column _builButtonColum(Color color, IconData icon, String label) {
             fontSize: 14,
             fontWeight: FontWeight.w400,
             color: color,
-          ))
+          )),
+
     ],
   );
 }
