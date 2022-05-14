@@ -24,7 +24,7 @@ class RecipeScreen extends StatelessWidget {
                         style: TextStyle(color: Colors.black54, fontSize: 16))
                   ],
                 )),
-            FavoriteWidget()
+            FavoriteWidget(isFavorited: false, favoriteCount: 44)
           ],
         ));
     Widget buttonSection = Container(
